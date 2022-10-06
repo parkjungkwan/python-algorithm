@@ -7,22 +7,45 @@
         ### 화폐교환 ###
       ****************************
          요청금액 : 126520 원
-         5만원 : 2매
-         1만원 : 2매
-         5천원 : 1매
-         1천원 : 1매
-         5백원 : 1개
-         백원 : 0개
-         오십원 : 0개
-         십원 : 2개
+         50000원 : 2매
+         10000원 : 2매
+         5000원 : 1매
+         1000원 : 1매
+         500원 : 1개
+         100원 : 0개
+         50원 : 0개
+         10원 : 2개
       *****************************
 '''
+import gc
+
+
 class Solution:
    def solution(self, money):
       title = " ### 화폐교환 ###"
       aster = "*"*30
       answer = f"요청금액 : {money} 원"
-      return f'{title} \n {aster} \n {answer} \n {aster}'
+      unit = [50000, 10000, 5000, 1000, 500, 100, 50, 10]
+      # 이 자리에 화폐단위를 출력하는 코드를 넣으시오
+      for i in unit:
+
+         print(i)
+
+      
+      '''
+      result = (
+         f'{title} \n {aster} \n {answer} \n {aster}\n '
+         f'5만원 : {answer2}매 \n '
+         f'1만원 : {answer3}매 \n '
+         f'5000원 : {answer4}매 \n '
+         f'1000원 : {answer5}매 \n '
+         f'500원 : {answer6}매 \n' 
+         f'100원 : {answer7}매 \n '
+         f'50원 : {answer8}매 \n '
+         f'10원 : {answer9}매'
+      )
+      '''
+      return
    
 if __name__=="__main__":
    solution = Solution()
