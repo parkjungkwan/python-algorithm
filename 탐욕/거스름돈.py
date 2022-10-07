@@ -32,11 +32,11 @@ class Solution:
       for k, v in dc.items():
          print(f'{k}원 : {v}매')
       print("*"*30)
-      return
+      
    
 if __name__=="__main__":
    solution = Solution()
    money = int(input("화폐교환할 금액입력: "))
-   print(solution.solution(money))
+   solution.solution(money)
    
  
